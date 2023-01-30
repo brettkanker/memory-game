@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-pairs-client';
+
+  public onCubeClicked(color: string): void {
+    console.log(color);
+  }
 }

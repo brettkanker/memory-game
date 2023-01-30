@@ -1,0 +1,12 @@
+<div
+  [ngStyle]="{
+    'background-color': customColor.length > 0 ? customColor :
+    defaultColor
+  }"
+  (click)="sendEvent()"
+>
+
+  {{ customColor.length > 0 ? customColor : defaultColor }}
+  <ng-content></ng-content>
+  <p></p>
+</div>
