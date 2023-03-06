@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { GameComponent } from './game/game.component';
+import { GameCardComponent } from './game-card/game-card.component';
+import { RestartDialogComponent } from './restart-dialog/restart-dialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { GameComponent } from './game/game.component';
     HomeComponent,
     IntroductionComponent,
     GameComponent,
+    GameCardComponent,
+    RestartDialogComponent,
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
