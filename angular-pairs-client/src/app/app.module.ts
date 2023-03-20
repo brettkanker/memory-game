@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,9 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { GameComponent } from './game/game.component';
-import { GameCardComponent } from './game-card/game-card.component';
-import { RestartDialogComponent } from './restart-dialog/restart-dialog.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardComponent } from './game/card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +18,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     IntroductionComponent,
     GameComponent,
-    GameCardComponent,
-    RestartDialogComponent,
+    CardComponent,
    ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    BrowserAnimationsModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
