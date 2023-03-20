@@ -1,1 +1,8 @@
-<img [src]="imagePath" class="card-img-top">
+<div #card class="card" [style]="{ 'width': imageWidth + 'px' }" (click)="onClick()">
+  <div class="card__face card__front">
+    <img src="./assets/cardback2.png" class="card-img-top" alt="back of the card">
+  </div>
+  <div class="card_face card__back">
+    <img [src]="imagePath" class="card-img-top" [ngClass]="{'solved': wasSolved }" alt="...">
+  </div>
+</div>
