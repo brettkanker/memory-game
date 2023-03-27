@@ -16,14 +16,14 @@
   &__back {
     transform: rotateY(180deg);
   }
+}
 
-  .card.flipped {
-    .card__face {
-      transform: rotateY(180deg);
-    }
+.card.flipped {
+  .card__face {
+    transform: rotateY(180deg);
+  }
 
-    .card__back {
-      transform: rotateY(0deg);
-    }
+  .card__back {
+    transform: rotateY(0deg);
   }
 }

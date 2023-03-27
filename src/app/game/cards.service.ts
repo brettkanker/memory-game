@@ -2,7 +2,7 @@ import { ReplaySubject } from 'rxjs';
 import { Cards } from './../../assets/cards/cards';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { CardsPerArtist } from './CardsPerArtist';
+import { CardsPerArtist } from './cards-per-artist';
 
 @Injectable({
   providedIn: 'root'
@@ -32,12 +32,6 @@ export class CardsService {
       }
 
       allCards[artist].push('./assets/cards/' + filepath);
-
-      // console.log(filepath);
-      // allCards.push({
-      //   authorName: filepath,
-      //   imagePath: './assets/cards/' + filepath
-      // })
     });
 
     this.playcards.next(allCards);

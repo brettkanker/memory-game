@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { GameComponent } from './game/game.component';
 import { CardComponent } from './game/card/card.component';
+import { ModalComponent } from './shared/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CardComponent } from './game/card/card.component';
     IntroductionComponent,
     GameComponent,
     CardComponent,
+    ModalComponent,
    ],
   imports: [
     HttpClientModule,

@@ -8,7 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'introduction', component: IntroductionComponent },
-  { path: 'game', component: GameComponent }
+  { path: 'game', component: GameComponent },
+  { path: '', pathMatch: 'full', component: HomeComponent }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
